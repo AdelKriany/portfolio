@@ -35,3 +35,19 @@ function typestyling(){
 }
 typestyling();
 
+const toggleBtn = document.getElementById("mode-toggle");
+const body = document.body;
+
+toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // تغيير الأيقونة
+    const icon = toggleBtn.querySelector("i");
+    if (body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+});

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+     <link href="progects.css" rel="stylesheet">
+    <title>My Projects</title>
+</head>
+<body>
+     <header>🚀 My Projects</header>
+
+  <section class="projects">
+    <div class="card">
+      <h3>Snake Game (C++)</h3>
+      <p>Console-based Snake game with increasing difficulty levels (in progress).</p>
+    </div>
+
+    <div class="card">
+      <h3>Tetris Game (C++, In Progress)</h3>
+      <p>Tetris-style game with falling blocks and row-clearing mechanics.</p>
+    </div>
+
+    <div class="card">
+      <h3>Flappy Bird Clone (JavaScript)</h3>
+      <p>Browser-based Flappy Bird game using HTML5 Canvas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Quiz App (HTML, CSS, JavaScript)</h3>
+      <p>Interactive quiz app (in progress).</p>
+    </div>
+
+    <div class="card">
+      <h3>Database Practice (SQL Basics)</h3>
+      <p>Created and managed simple databases and practiced CRUD operations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Secure Password Generator (Python)</h3>
+      <p>Python tool to generate strong, random passwords with customizable options.</p>
+    </div>
+
+    <div class="card">
+      <h3>Password Strength Checker (Python)</h3>
+      <p>Python script to evaluate password security.</p>
+    </div>
+
+    <div class="card">
+      <h3>Telegram Bots (Python & Telebot API)</h3>
+      <p>Developed Telegram bots (don’t forget to add links).</p>
+    </div>
+
+    <div class="card">
+      <h3>3D Modeling Practice (Blender)</h3>
+      <p>Designed and rendered basic 3D models while learning Blender fundamentals.</p>
+    </div>
+     
+  </section>
+
+  <footer>
+    © 2025 Adel's Portfolio. All rights reserved.
+  </footer>
+
+
+   <script>
+    // Animation for fade-in effect
+    const cards = document.querySelectorAll('.card');
+    window.addEventListener('scroll', () => {
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (cardTop < windowHeight - 50) {
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+          card.style.transition = "all 0.6s ease";
+        }
+      });
+    });
+  </script>
+    
+</body>
+</html>
